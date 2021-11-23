@@ -1,0 +1,32 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografía
+    4. Visuales
+    5. Otros (Misceleanos)
+*/
+:root {
+    /* Colors */
+    /* font-size */
+}
+/* Valores iniciales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+/* Fin Valores iniciales */
+body {
+    font-size: 1.4rem;
+    counter-reset: game;
+}
+input:checked {
+    counter-increment: game;
+}
+.total-count::after {
+    content: counter(game);
+}

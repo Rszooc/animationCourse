@@ -1,0 +1,276 @@
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografía
+    4. Visuales
+    5. Otros (Misceleanos)
+*/
+:root {
+    /* Variables colores y tamaño de fuentes*/
+    --blue-sky: #ccefff;
+    --mouth-gray: #C0C0C0;
+    --land-sand: #A13100;
+    --land-shadow-sand: #732300;
+    --land-grass: #1E7100;
+}
+/* Valores iniciales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+/* Fin Valores iniciales */
+body {
+    font-size: 1.4rem;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 20px;
+    height: 700px;
+    width: 350px;
+    background-color: var(--blue-sky);
+    box-shadow: 0px 19px 38px rgba(0,0,0, 0.30), 0px 15px 12px rgba(0,0,0, 0.22);
+}
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    right: 60px;
+}
+.headOne {
+    position: relative;
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+    background: white;
+}
+.headtwo {
+    position: relative;
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+    background: white;
+}
+.leftEye {
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    background: #077378;
+    top: 20px;
+    left: 20px;
+}
+.rightEye {
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    background:#077378;
+    top: 20px;
+    right: 20px;
+}
+.nose {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    border-radius: 50% 50% 50px 50px;
+    background-color: pink;
+    left: calc(50% - 8px);
+    top: 50%;
+    
+}
+.mouth {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--mouth-gray);
+    border-top: none;
+    border-left: none;
+    /* transform: rotate(0deg); */
+    left: calc(50% - 15px);
+    top: calc(52%);
+}
+.mouth1 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid var(--mouth-gray);
+    border-top: none;
+    border-left: none;
+    transform: rotate(85deg);
+    left: 49%;
+    top: 52%;
+}
+.leftEar {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background: white;
+    border-radius: 45%;
+    top: -30px;
+    transform: rotate(-10deg);
+}
+.rightEar {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background: white;
+    border-radius: 45%;
+    top: -30px;
+    right: 0;
+    transform: rotate(10deg);
+}
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    left: 60px;
+    /* background-color: white; */
+
+}
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    background: var(--land-sand);
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.grass {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background: var(--land-grass);
+}
+.grassCube { 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--land-grass);
+    transform: rotate(45deg);
+}
+.Scube {
+    /* top: 50px;  */
+    background: var(--land-shadow-sand);
+}
+.one {
+    left: 40px; 
+}
+.two {
+    left: 80px; 
+}
+.three {
+    left: 120px; 
+}
+.four {
+    left: 160px; 
+}
+.five {
+    left: 200px; 
+}
+.Scube {
+    top: 10px; 
+    background: var(--land-shadow-sand);
+}
+.Scube {
+    top: 10px; 
+    background: var(--land-shadow-sand);
+}
+.Scube {
+    top: 10px; 
+    background: var(--land-shadow-sand);
+}
+
+.Cube1 { 
+    left: 40px;
+    background: var(--land-grass);
+}
+.Cube2 { 
+    left: 80px;
+    background: var(--land-grass);
+}
+.Cube3 { 
+    left: 120px;
+    background: var(--land-grass);
+}
+.Cube4 { 
+    left: 160px;
+    background: var(--land-grass);
+}
+.Cube5 { 
+    left: 200px;
+    background: var(--land-grass);
+}
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 300px;
+    width: 80px;
+    bottom: 0;
+    left: 30px;
+}
+.headthree {
+    position: relative;
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+    background: white;
+}
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    height: 250px;
+    background: var(--land-sand);
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 3px 0px 10px black;
+}
+.grass2 {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background: var(--land-grass);
+}
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+}
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+}
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+}
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+}
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+}
