@@ -39,7 +39,7 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
-    
+    background-image: radial-gradient(circle, #313132, #272727, #1d1d1d, #131313, #040404);
     counter-reset: game;
 }
 .mainTitle {
@@ -67,7 +67,7 @@ body {
     height: 700px;
     width: 350px;
     background-color: var(--blue-sky);
-    box-shadow: 0px 19px 38px rgba(0,0,0, 0.30), 0px 15px 12px rgba(0,0,0, 0.22);
+    box-shadow: 0px 19px 38px rgba(186, 239, 241, 0.3), 0px 15px 12px rgba(157, 245, 239, 0.22);
     overflow: hidden;
 }
 .layer-1 {
@@ -166,7 +166,6 @@ input:checked {
     border: 3px solid var(--mouth-gray);
     border-top: none;
     border-left: none;
-    /* transform: rotate(0deg); */
     left: calc(50% - 15px);
     top: calc(52%);
 }
@@ -230,7 +229,7 @@ input:checked {
     left: 60px;
     /* Animación */
     animation-name: bunny;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -322,7 +321,7 @@ input:checked {
     left: 60px;
     /* Animación */
     animation-name: bunny;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -347,7 +346,7 @@ input:checked {
     right: 60px;
     /* Animación */
     animation-name: bunny;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
